@@ -31,6 +31,7 @@ easyHTTP.prototype.post = function(url, data, callback) {
   this.send(JSON.stringify(data));
 }
 
+
 // make an Http put request
 
 // make an Http del request

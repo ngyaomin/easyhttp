@@ -37,10 +37,20 @@ const data = {
 // });
 
 // update post
-http.put('https://jsonplaceholder.typicode.com/posts/1', data, function(err, post) {
+// http.put('https://jsonplaceholder.typicode.com/posts/5', data, function(err, post) {
+//   if(err) {
+//     console.log(err);
+//   } else {
+//     console.log(post);
+//   }
+// });
+
+// delete post
+http.delete('https://jsonplaceholder.typicode.com/posts/1', 
+function(err, response) {
   if(err) {
     console.log(err);
   } else {
-    console.log(post);
+    console.log(response);
   }
 });

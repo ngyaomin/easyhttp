@@ -19,7 +19,11 @@ easyHTTP.prototype.get = function(url, callback) {
 }
 
 // make an Http post request
-
+easyHTTP.prototype.post = function(url, data, callback) {
+  this.http.open('POST', url, true);
+  
+  this.send();
+}
 
 // make an Http put request
 

@@ -6,9 +6,10 @@ function easyHTTP() {
 easyHTTP.prototype.get = function(url) {
   this.http.open('GET', url, true);
   
-  this.Http.onload = function() {
-    if(this.http.status === 200) {
-      console.log(this.http.responseText);
+  let self = this;
+  this.http.onload = function() {
+    if(self.http.status === 200) {
+      console.log(self.http.responseText);
     }
   };
   
